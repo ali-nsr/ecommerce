@@ -47,7 +47,7 @@
                         Account
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <button class="dropdown-item" type="button">Sign in</button>
+                        <a href="{% url 'accounts:login' %}" class="dropdown-item">Login</a>
                         <button class="dropdown-item" type="button">Sign up</button>
                     </div>
                 </div>
@@ -111,19 +111,9 @@
                                 class="fa fa-angle-right float-right mt-1"></i></a>
                         <div class="dropdown-menu position-absolute rounded-0 border-0 m-0">
                             <a href="" class="dropdown-item">Men's Dresses</a>
-                            <a href="" class="dropdown-item">Women's Dresses</a>
-                            <a href="" class="dropdown-item">Baby's Dresses</a>
                         </div>
                     </div>
                     <a href="" class="nav-item nav-link">Shirts</a>
-                    <a href="" class="nav-item nav-link">Jeans</a>
-                    <a href="" class="nav-item nav-link">Swimwear</a>
-                    <a href="" class="nav-item nav-link">Sleepwear</a>
-                    <a href="" class="nav-item nav-link">Sportswear</a>
-                    <a href="" class="nav-item nav-link">Jumpsuits</a>
-                    <a href="" class="nav-item nav-link">Blazers</a>
-                    <a href="" class="nav-item nav-link">Jackets</a>
-                    <a href="" class="nav-item nav-link">Shoes</a>
                 </div>
             </nav>
         </div>
@@ -138,7 +128,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
                         <a href="shop.html" class="nav-item nav-link">Shop</a>
                         <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                         <div class="nav-item dropdown">
@@ -169,7 +159,7 @@
     </div>
 </div>
 <!-- Navbar End -->
-
+{% include 'message.html' %}
 
 {% block content %}
 {% endblock %}
